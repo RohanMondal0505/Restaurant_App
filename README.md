@@ -17,4 +17,5 @@
 ## Screenshots
 
 ![App Screenshot](./screenshort/MenuScreen.jpg)
+
 ![App Screenshot](./screenshort/MenuDetailScreen.jpg)
