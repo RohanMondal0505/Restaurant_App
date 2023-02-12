@@ -8,10 +8,12 @@ import {
     View,
 } from 'react-native';
 import Ionic from 'react-native-vector-icons/Ionicons';
+import {Menus} from '../api/StaticData';
 import Header from '../components/Header';
 
 const DetailScreen = ({route}) => {
-    const {data} = route.params;
+    const {userId} = route.params;
+    const data = Menus.find(item => item.id === userId);
 
     const rating = rating => {
         let ratings = [];
@@ -57,7 +59,7 @@ const DetailScreen = ({route}) => {
     return (
         <SafeAreaView style={styles.MainContainer}>
             <ScrollView style={styles.Container}>
-                <Header title={'Menu Details'} back={true} data={data} />
+                <Header title={'Menu Details'} back={true} userId={userId} />
                 <View style={styles.ImageContainer}>
                     <Image style={styles.Image} source={{uri: data.images}} />
                 </View>

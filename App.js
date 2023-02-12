@@ -1,21 +1,33 @@
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import React from 'react';
-import DetailScreen from './src/screens/DetailScreen';
-import HomeScreen from './src/screens/HomeScreen';
-
-const Stack = createNativeStackNavigator();
+import dynamicLinks from '@react-native-firebase/dynamic-links';
+import React, {useEffect} from 'react';
+import NavigationService from './src/navigation/NavigationService';
+import Routes from './src/navigation/Routes';
 
 const App = () => {
+    useEffect(() => {
+        dynamicLinks()
+            .getInitialLink()
+            .then(link => {
+                handleDynamicLink(link);
+            });
+
+        const linkingListener = dynamicLinks().onLink(handleDynamicLink);
+        return () => linkingListener();
+    }, []);
+
+    const handleDynamicLink = link => {
+        if (!!link?.url) {
+            let getId = link.url.split('=').pop();
+            setTimeout(() => {
+                NavigationService.navigate('Detail', {userId: getId});
+            }, 1000);
+        }
+    };
+
     return (
-        <NavigationContainer>
-            <Stack.Navigator
-                initialRouteName="Home"
-                screenOptions={{headerShown: false}}>
-                <Stack.Screen name="Home" component={HomeScreen} />
-                <Stack.Screen name="Detail" component={DetailScreen} />
-            </Stack.Navigator>
-        </NavigationContainer>
+        <>
+            <Routes />
+        </>
     );
 };
 

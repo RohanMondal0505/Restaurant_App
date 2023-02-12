@@ -50,7 +50,7 @@ const MenuCart = ({data}) => {
     return (
         <TouchableOpacity
             style={styles.Container}
-            onPress={() => navigation.navigate('Detail', {data})}>
+            onPress={() => navigation.navigate('Detail', {userId: data.id})}>
             <View style={styles.ImageContainer}>
                 <Image style={styles.Image} source={{uri: data.images}} />
             </View>

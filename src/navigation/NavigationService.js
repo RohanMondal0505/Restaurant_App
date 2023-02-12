@@ -1,0 +1,20 @@
+import {NavigationActions} from '@react-navigation/native';
+
+let _navigator;
+
+function setTopLevelNavigator(navigatorRef) {
+    _navigator = navigatorRef;
+}
+function navigate(routeName, params) {
+    _navigator.navigate(routeName, params);
+    return;
+}
+function goBack() {
+    _navigator.dispatch(NavigationActions.back());
+}
+
+export default {
+    setTopLevelNavigator,
+    navigate,
+    goBack,
+};
