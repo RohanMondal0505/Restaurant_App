@@ -94,4 +94,59 @@ export const Menus = [
         ingredients:
             '400 Gram Fettucine pasta, blanched\n\n150 ml Olive oil\n\n18 gram Onion, chopped\n\n15 gram Garlic, chopped\n\n700 gram Roma tomato (diced)\n\n5 gram Red pepper flakes\n\n20 gram Fresh basil\n\n60 gram Butter, unsalted\n\n8 gram Dried olive powder',
     },
+    {
+        id: '0008',
+        name: 'Hummus with PERI-PERI Drizzle',
+        position: 4,
+        description:
+            'Pour Smoky PERi-PERi Oil Over Creamy Hummus and Dig in with Strips Of Warm Pita',
+        images: 'https://www.vmcdn.ca/f/files/glaciermedia/import/lmp-all/1620316-nandoschicken.jpg',
+        price: '30.00',
+        rating: 3.5,
+        cuisine_name: 'Indian',
+        category_name: 'Appeteasers',
+        ingredients:
+            "Houmous: Chickpeas (55%) [Chickpeas, water], Rapeseed Oil, Water, Sesame Seed Paste (6%), Lemon Juice Concentrate, Garlic Puree, Salt Drizzle: Vegetable Oil (Olive, Sunflower), Lemon Juice, Garlic Puree,&nbsp;Red Chilli Puree, Vinegar, Salt, Spices (Chilli, Paprika, African Bird's Eye Chilli)",
+    },
+    {
+        id: '0009',
+        name: 'Red Pepper Dip',
+        position: 5,
+        description:
+            'Dive Into Temping Roasted Red Pepper and Chili Spice Dip with Warm Pita Strips',
+        images: 'https://www.themediterraneandish.com/wp-content/uploads/2020/05/muhammara-recipe-8.jpg',
+        price: '15.00',
+        rating: 3,
+        cuisine_name: 'Indian',
+        category_name: 'Appeteasers',
+        ingredients:
+            '2 red bell peppers\n\n4 tablespoon Extra Virgin Olive Oil divided\n\n¼ lb shelled toasted walnuts\n\n1 garlic clove roughly chopped\n\n2 ½ tablespoon tomato paste\n\n¾ cup bread crumbs\n\n2 tablespoon pomegranate molasses I used this one\n\n1 teaspoon Aleppo pepper\n\n½ teaspoon sugar\n\n1 teaspoon sumac\n\n½ teaspoon salt\n\n½ teaspoon cayenne pepper optional',
+    },
+    {
+        id: '0010',
+        name: 'Appeteaser Platter',
+        position: 6,
+        description: 'Choose any Three Appeteasers',
+        images: 'https://www.dinneratthezoo.com/wp-content/uploads/2020/05/antipasto-platter-5.jpg',
+        price: '25.00',
+        rating: 2.5,
+        cuisine_name: 'Indian',
+        category_name: 'Appeteasers',
+        ingredients:
+            '1 1/2 pounds assorted cured meats such as salami, prosciutto, pepperoni and coppa\n\n1 pound cheese sliced or cubed, such as provolone or asiago\n\n1 cup small mozzarella balls bocconcini, plain or marinated in olive oil and herbs\n\n1 cup olives\n\n2 cups grilled and/or pickled vegetables such as pepperoncini, roasted red peppers, marinated artichokes, marinated beans\n\n1 cup raw vegetables cherry tomatoes, baby carrots, cucumber\n\n2-3 cups assorted breads focaccia, breadsticks, crostini\n\nfresh herbs for garnish\n\nsauces such as bruschetta or olive tapenade optional',
+    },
+    {
+        id: '0011',
+        name: 'Fettuccine Pomodoro',
+        position: 7,
+        description:
+            "A light, quick and easy pasta recipe, Fettuccine Pomodoro is a delicious dish for breakfast, brunch or kid's tiffin!",
+        images: 'https://c.ndtvimg.com/0oc68rbg_fettuccine-pomodoro_625x300_30_August_18.jpg',
+        price: '44.99',
+        rating: 3,
+        cuisine_name: 'Italy',
+        category_name: 'Appeteasers',
+        ingredients:
+            '400 Gram Fettucine pasta, blanched\n\n150 ml Olive oil\n\n18 gram Onion, chopped\n\n15 gram Garlic, chopped\n\n700 gram Roma tomato (diced)\n\n5 gram Red pepper flakes\n\n20 gram Fresh basil\n\n60 gram Butter, unsalted\n\n8 gram Dried olive powder',
+    },
 ];
