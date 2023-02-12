@@ -13,3 +13,8 @@
 -   "@react-navigation/native-stack": "^6.9.9",
 -   "react-native-toast-message": "^2.1.5",
 -   "react-native-vector-icons": "^9.2.0"
+
+## Screenshots
+
+![App Screenshot](./screenshort/MenuScreen.jpg)
+![App Screenshot](./screenshort/MenuDetailScreen.jpg)
